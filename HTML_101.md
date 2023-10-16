@@ -42,3 +42,9 @@ used.
 
 ## Comment 
 `< !-- Enter your comment -->` - This is used to write a comment.
+
+## Link
+
+To convert a text to a link, we use the `<a></a>` tag. But only using this tag wont convert it to a link. Hence we use something called as href (hypertext reference). In the href we mention where should the marked text which is converted to a link will take us to.
+
+Ex: `<a href="https://destination link"> Sample text </a>`. Here destination is the link where you want to take the user to.
