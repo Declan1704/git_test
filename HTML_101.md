@@ -25,3 +25,20 @@ The tag used here is `<h1>`. There are a total of 6 heading tags, `<h1>` to `<h6
 Ex: `<h1> Heading 1</h1>`
 
    ` <h2> Heading 2 </h2>`
+
+# Bold and Italics
+
+## Bold
+
+`<strong></strong>` - This tag is used to convert the normal content within it to bols characters
+
+## Italics
+
+`<em></em>` - This tag is used to convert a normal content within it to italic text.
+
+## Note:
+`<b></b> <i></i>` tags also make a content within it as bold and italic. But it is not usually
+used.
+
+## Comment 
+`< !-- Enter your comment -->` - This is used to write a comment.
