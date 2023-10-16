@@ -13,3 +13,15 @@ utf-8. The syntax is `<meta charset="utf-8">`
 
 
 # Paragraphs and Headings
+
+`<p> </p>` - This tells the browser that the content withis this tag is a paragraph. The remaining content will be displayed on the next line after the </p> tag ends.
+
+## Headings
+This is used to make a particular line as a heading.
+
+
+The tag used here is `<h1>`. There are a total of 6 heading tags, `<h1>` to `<h6>`. As it the number goes on increasing, the size of the content within the heading tag goes on diminishing.
+
+Ex: `<h1> Heading 1</h1>`
+
+   ` <h2> Heading 2 </h2>`
