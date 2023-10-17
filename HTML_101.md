@@ -48,3 +48,7 @@ used.
 To convert a text to a link, we use the `<a></a>` tag. But only using this tag wont convert it to a link. Hence we use something called as href (hypertext reference). In the href we mention where should the marked text which is converted to a link will take us to.
 
 Ex: `<a href="https://destination link"> Sample text </a>`. Here destination is the link where you want to take the user to.
+
+If you want to make a link that opens another page on the web, then make another html file and write your code. After writing then in your source html file, 
+to where you want to mention the link, apply the `<a href="name of the second file">Your content</a>`. Make sure that your second file is in the same directory
+as your first file.
