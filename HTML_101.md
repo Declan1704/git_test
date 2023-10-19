@@ -52,3 +52,38 @@ Ex: `<a href="https://destination link"> Sample text </a>`. Here destination is 
 If you want to make a link that opens another page on the web, then make another html file and write your code. After writing then in your source html file, 
 to where you want to mention the link, apply the `<a href="name of the second file">Your content</a>`. Make sure that your second file is in the same directory
 as your first file.
+
+## Image
+
+If you want to insert an image in your web page, then we use the tag `<img>`. But this tag is not sufficient enough.So we use something called an src which refers to the address of the image.
+So in order mention the source, go to the image file in the net, copy the image address and the after typing the src, paste the address. 
+Ex: `<img src="Address of the image">`
+
+If you want to paste as image which is in your system, then paste the image in the root directory your html file and in the src mention the name of the image.
+Ex: `img src="name of the image.jpeg"`
+
+
+## File Structure
+
+It's very important to organize your files as to read it becomes easy. If you're saving making a directory for images and saving your image in that directory, then its important to mention the directory path in 
+the src. 
+Ex: `<img src="folder name/image name">`
+
+Make sure that the folder that youre making for the images should be in the same root directory as the html files.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
