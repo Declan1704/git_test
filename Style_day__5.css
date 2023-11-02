@@ -1,0 +1,27 @@
+body {
+  background-color:black;
+  color:white;
+  font-size:21px;
+}
+
+p{
+  color:white;
+  font-size:20px;
+}
+
+h1{
+  color:pink;
+  font-size:22px;
+}
+
+div{
+  background-color:green;
+  color:pink;
+  width:500px;
+  height:300px;
+}
+
+span{
+  color:blue;
+  width:50px;
+}
