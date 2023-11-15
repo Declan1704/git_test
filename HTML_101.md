@@ -53,6 +53,15 @@ If you want to make a link that opens another page on the web, then make another
 to where you want to mention the link, apply the `<a href="name of the second file">Your content</a>`. Make sure that your second file is in the same directory
 as your first file.
 
+### Opening links in a new tab
+
+The method shown above opens links in the same tab as the webpage containing them. This is the default behaviour of most browsers and it can be changed.
+All we need is another attribute: the `target` attribute.
+
+While `href` specifies the destination link, target specifies where the linked resource will be opened. If it is not present, then, by default, it will take on the` _self` value which opens the link in the current tab. To open the link in a new tab or window (depends on browser settings) you can set it to `_blank` as follows:
+
+`<a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">click me</a>`
+
 ## Image
 
 If you want to insert an image in your web page, then we use the tag `<img>`. But this tag is not sufficient enough.So we use something called an src which refers to the address of the image.
@@ -72,18 +81,44 @@ Ex: `<img src="folder name/image name">`
 Make sure that the folder that youre making for the images should be in the same root directory as the html files.
 
 
+# lists
 
+# Introduction
 
+Whether it be IMDB’s top 250 movies or the FBI’s most wanted, lists are everywhere on the web and you are going to need one eventually in your webpages.
 
+## Unordered lists
 
+If you want to have a list of items where the order doesn’t matter,then you can use an unordered list.
 
+Unordered lists are created using the `<ul>` element, and each item within the list is created using the list item element `<li>`.
 
+Each list item in an unordered list begins with a bullet point:
 
+Ex:
 
+```
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
 
+## Ordered lists
 
+If you instead want to create a list of items where the order does matter,then you can use an ordered list.
 
+Ordered lists are created using the `<ol>` element. Each individual item in them is again created using the list item element `<li>`. 
+However, each list item in an ordered list begins with a number instead:
 
+Ex:
 
-
+```
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+```
 
