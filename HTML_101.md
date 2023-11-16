@@ -62,6 +62,67 @@ While `href` specifies the destination link, target specifies where the linked r
 
 `<a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">click me</a>`
 
+You may have noticed that we snuck in the `rel` attribute above. This attribute is used to describe the relation between the current page and the linked document.
+
+The `noopener` value prevents the opened link from gaining access to the webpage from which it was opened. 
+The `noreferrer` value prevents the opened link from knowing which webpage or resource has a link (or ‘reference’) to it. 
+It also includes the `noopener` behaviour and thus can be used by itself as well.
+
+### Absolute and relative links
+
+Generally, there are two kinds of links we will create:
+
+1) Links to pages on other websites on the internet
+2) Links to pages located on our own websites
+
+
+#### Absolute Links
+
+Links to pages on other websites on the internet are called absolute links. A typical absolute link will be made up of the following parts: `protocol://domain/path`. An absolute link will always contain the protocol and domain of the destination.
+
+Ex: `https://www.theodinproject.com/about`
+
+#### Relative Links
+
+Links to other pages within our own website are called relative links. Relative links do not include the domain name, since it is another page on the same site, it assumes the domain name will be the same as the page we created the link on.
+
+Relative links only include the file path to the other page, 
+relative to the page you are creating the link on.
+
+If suppose you want to link an html file (say about.html) from your main file (say index.html)
+Then this is how its done
+
+```
+<body>
+  <h1>Homepage</h1>
+
+	<a href="about.html">About</a>
+</body>
+```
+
+This is if your html file to be linked is in the same directory as the main file.
+
+But if you want to link your html file which is in another directory (say pages directory),
+Then this is how we do it:
+
+```
+<body>
+  <h1>Homepage</h1>
+  <a href="pages/about.html">About</a>
+</body>
+```
+
+In many cases, this will work just fine; however, you can still run into unexpected issues with this approach. Prepending `./` before the link will in most cases prevent such issues. By adding `./` you are specifying to your code that it should start looking for the file/directory relative to the current directory.
+
+Ex:
+
+```
+<body>
+  <h1>Homepage</h1>
+  <a href="./pages/about.html">About</a>
+</body>
+```
+
 ## Image
 
 If you want to insert an image in your web page, then we use the tag `<img>`. But this tag is not sufficient enough.So we use something called an src which refers to the address of the image.
@@ -70,6 +131,19 @@ Ex: `<img src="Address of the image">`
 
 If you want to paste as image which is in your system, then paste the image in the root directory your html file and in the src mention the name of the image.
 Ex: `img src="name of the image.jpeg"`
+
+
+### Image size attributes
+
+While not strictly required, specifying height and width attributes in image tags helps the browser layout the page without causing the page to jump and flash.
+
+It is a good habit to always specify these attributes on every image, even when the image is the correct size or you are using CSS to modify it.
+
+Ex:
+`<img src="../images/dog.jpg" height="150" width="150">`
+
+
+
 
 
 ## File Structure
